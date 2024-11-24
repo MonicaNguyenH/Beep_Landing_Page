@@ -1,0 +1,12 @@
+.nav-container {
+    width: 1780px;
+    height: 100px;
+    flex-shrink: 1;
+
+    border-radius: 50px;
+    background: var(--nav-black);
+}
+
+.main {
+    color: red;
+}
