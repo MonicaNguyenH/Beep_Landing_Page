@@ -1,0 +1,49 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('fonts/Switzer-Variable.ttf') format('ttf'),
+       url('fonts/Switzer-VariableItalic.ttf') format('ttf');
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Colors */
+  --white: #F4F0F1;
+  --black: #141216;
+  --nav-black: rgba(29, 27, 30, 0.9);
+  --purple: #651FD7;
+  --pink: #F7185B;
+  --neu-grey: #ADADAD;
+
+  /* Fonts */
+  --reg-16: 16px 'Switzer', sans-serif;
+  --bold-16: bold 16px 'Switzer', sans-serif;
+  --reg-25: 25px 'Switzer', sans-serif;
+  --reg-30: 30px 'Switzer', sans-serif;
+  --bold-40: bold 40px 'Switzer', sans-serif;
+  --reg-40: 40px 'Switzer', sans-serif;
+  --reg-50: 50px 'Switzer', sans-serif;
+  --bold-50: bold 50px 'Switzer', sans-serif;
+  --bold-60: bold 60px 'Switzer', sans-serif;
+  --bold-80: bold 80px 'Switzer', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Switzer';
+}
+
+
