@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ImgBtn() {
   const [activeScreen, setActiveScreen] = useState(1);
@@ -32,29 +34,24 @@ export default function ImgBtn() {
     },
   ];
 
+  useEffect(() => {
+    screens.forEach((screen) => {
+      const img = new Image();
+      img.src = screen.image;
+    });
+  }, []);
+
   return (
-    <div className="img-btn-container">
+    <section id="how-it-works" className="img-btn-container">
       <h1 className="heading">How Beep Works</h1>
-      <p className="description">
-        Explore how Beep’s powerful tools keep you safe, informed, and connected at all times.
-      </p>
+      <p className="description">Explore how Beep’s powerful tools keep you safe, informed, and connected at all times.</p>
 
       <div className="layout">
         {/* Buttons 1 and 2 */}
         <div className="button-group-1">
           {screens.slice(0, 2).map((screen) => (
-            <div
-              key={screen.id}
-              onClick={() => setActiveScreen(screen.id)}
-              className="step-1"
-            >
-              <div
-                className={`step-number-1 ${
-                  activeScreen === screen.id ? "active-number-1" : ""
-                }`}
-              >
-                {screen.id}
-              </div>
+            <div key={screen.id} onClick={() => setActiveScreen(screen.id)} className="step-1">
+              <div className={`step-number-1 ${activeScreen === screen.id ? "active-number-1" : ""}`}>{screen.id}</div>
               <div>
                 <h3 className="step-title-1">{screen.title}</h3>
                 <p className="step-description-1">{screen.description}</p>
@@ -65,34 +62,14 @@ export default function ImgBtn() {
 
         {/* Image in the middle */}
         <div className="image-container">
-          {screens.map(
-            (screen) =>
-              activeScreen === screen.id && (
-                <img
-                  key={screen.id}
-                  src={screen.image}
-                  alt={screen.title}
-                  className="image"
-                />
-              )
-          )}
+          <AnimatePresence mode="wait">{screens.map((screen) => activeScreen === screen.id && <motion.img key={screen.id} src={screen.image} alt={screen.title} className="image" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, ease: "easeInOut" }} />)}</AnimatePresence>
         </div>
 
         {/* Buttons 3 and 4 */}
         <div className="button-group-2">
           {screens.slice(2, 4).map((screen) => (
-            <div
-              key={screen.id}
-              onClick={() => setActiveScreen(screen.id)}
-              className="step-2"
-            >
-              <div
-                className={`step-number-2 ${
-                  activeScreen === screen.id ? "active-number-2" : ""
-                }`}
-              >
-                {screen.id}
-              </div>
+            <div key={screen.id} onClick={() => setActiveScreen(screen.id)} className="step-2">
+              <div className={`step-number-2 ${activeScreen === screen.id ? "active-number-2" : ""}`}>{screen.id}</div>
               <div>
                 <h3 className="step-title-2">{screen.title}</h3>
                 <p className="step-description-2">{screen.description}</p>
@@ -101,6 +78,6 @@ export default function ImgBtn() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
