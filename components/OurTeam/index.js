@@ -4,10 +4,10 @@ import React, { useState } from "react";
 
 const OurTeam = () => {
   const teamMembers = [
-    { name: "Monica Nguyen", role: "Digital and Graphic Designer", image: "/OurTeam/Mon/mon.png" },
-    { name: "Jumi Pham", role: "Digital and Graphic Designer", image: "/OurTeam/Jumi/jumi.png" },
-    { name: "Shirin Forouzan", role: "Digital and Graphic Designer", image: "/OurTeam/Shirin/shirin.png" },
-    { name: "Callista Chan", role: "Digital and Graphic Designer", image: "/OurTeam/Cally/callista.png" },
+    { name: "Monica Nguyen", role: "Project Manager", image: "/OurTeam/Mon/mon.png" },
+    { name: "Jumi Pham", role: "UX/UI Designer", image: "/OurTeam/Jumi/jumi.png" },
+    { name: "Shirin Forouzan", role: "Frontend Developer", image: "/OurTeam/Shirin/shirin.png" },
+    { name: "Callista Chan", role: "Frontend Developer", image: "/OurTeam/Cally/callista.png" },
     { name: "Dennis Liu", role: "Full Stack Web Developer", image: "/OurTeam/Dennis/denis.png" },
     { name: "Sol Kim", role: "Full Stack Web Developer", image: "/OurTeam/Sol/sol.png" },
     { name: "Christy Wan", role: "Full Stack Web Developer", image: "/OurTeam/Christy/christy.png" },

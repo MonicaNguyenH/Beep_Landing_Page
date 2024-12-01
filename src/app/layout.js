@@ -15,6 +15,9 @@ const geistMono = localFont({
 export const metadata = {
   title: "Beep",
   description: "Beep Beep",
+  icons: {
+    icon: "/favicon.ico", // This will handle your favicon.ico
+  },
 };
 
 export default function RootLayout({ children }) {
