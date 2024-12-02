@@ -1,0 +1,365 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./components/NavBar/NavBar.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+
+/* NavBar Container */
+.NavBar_navContainer__7p04n {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: var(--nav-black);
+    border-radius: 50px;
+    padding: 0 30px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Logo */
+  .NavBar_logoImg__RuBmp img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Navigation Links - Desktop */
+  .NavBar_navLinks__o9WWJ {
+    display: flex; /* Visible by default for larger screens */
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .NavBar_navLinks__o9WWJ li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  
+  
+  /* Mobile Hamburger Menu */
+  .NavBar_hamburger__dmBuc {
+    display: none; /* Hidden on larger screens */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .NavBar_hamburger__dmBuc img {
+    width: 20px;
+    height: 15.48px;
+  }
+  
+  
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    /*Navbar container */
+    .NavBar_navContainer__7p04n {
+        width: 80%;
+        height: 70px;
+        padding: 0 30px;
+        margin-top: 40px;
+      }
+
+      .NavBar_logoImg__RuBmp img {
+        width: 40px;
+        height: 40px;
+      }
+
+    .NavBar_navLinks__o9WWJ {
+      display: none; /* Hide nav links on smaller screens */
+    }
+  
+    .NavBar_hamburger__dmBuc {
+      display: flex; /* Show hamburger menu on smaller screens */
+    }
+    /* Show and Hide Menu - Mobile */
+    .NavBar_showMenu__Zhy16 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: var(--black);
+        width: 100%;
+        height: calc(100vh - 100px);
+        padding-top: 100px;
+    }
+    .NavBar_showMenu__Zhy16 li:hover {
+        text-decoration: underline;
+    }
+
+    .NavBar_hideMenu__TM4cH {
+    display: none;
+    }
+
+  }
+  
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/investor/Investor.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.Investor_page__W8SiG {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    background-repeat: no-repeat;
+    background-image: url('/BG/lines.svg')
+}
+
+.Investor_navContainer__863Op {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+.Investor_mainContent__onX9U {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    margin: 160px 220px 0 220px;
+}
+
+.Investor_textContent__LvpG_ {
+    width: 734px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+.Investor_textContent__LvpG_ h1 {
+    font-family: Switzer;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+
+.Investor_textContent__LvpG_ button {
+    width: 290px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: var(--purple);
+}
+
+.Investor_getStartedBtn__LT0y1 {
+    background-color: var(--purple);
+    color: var(--white);
+    width: 290px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+}
+/* Adjust parent form container */
+.Investor_formSection__LK6pJ {
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form horizontally */
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em; /* Add consistent spacing between elements */
+  }
+  
+  /* Inputs and textarea */
+  .Investor_formSection__LK6pJ input,
+  .Investor_formSection__LK6pJ textarea {
+    width: 100%; /* Ensure all inputs take full width */
+    height: 50px; /* Consistent height */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  /* Name fields as a row */
+  .Investor_nameInput__xEfmg {
+    display: flex;
+    gap: 1em;
+  }
+  
+  /* Adjust widths of first and last name fields */
+  .Investor_firstName__VK_bx,
+  .Investor_lastName__x9j1j {
+    flex: 1; /* Each takes equal width */
+  }
+  
+  /* Textarea adjustment */
+  .Investor_Message__IPnF0 {
+    height: 100px; /* Increase height for text areas */
+  }
+  
+  /* Submit button styling */
+  .Investor_formSection__LK6pJ button {
+    width: 200px; /* Adjust button width */
+    height: 50px;
+    margin: 0 auto; /* Centers the button horizontally */
+    padding: 12px;
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Investor_formSection__LK6pJ button:hover {
+    background-color: #5000c4;
+    transform: scale(1.05);
+  }
+  
+  /* Form title and subtitle */
+  .Investor_formSection__LK6pJ h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--black);
+  }
+  
+  .Investor_formSection__LK6pJ p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: var(--black);
+  }
+
+  .Investor_formSection__LK6pJ label {
+    color: var(--black);
+    padding: 10px;
+    font-weight: 700;
+  }
+  
+  .Investor_buttonContainer__MaMyJ {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Horizontally center the button */
+  }
+  
+  .Investor_formSection__LK6pJ select {
+    width: 100%; /* Full width of the parent container */
+    height: 50px; /* Consistent height with other inputs */
+    padding: 10px;
+    padding-right: 40px; /* Adds space on the right for the icon */
+    padding-left: 20px; /* Adds space on the left */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 1rem; /* Font size for text */
+    outline: none;
+    background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>')
+        no-repeat right 20px center; /* Positions the icon */
+    background-size: 15px; /* Adjust the size of the icon */
+    appearance: none; /* Removes default dropdown arrow */
+    cursor: pointer; /* Changes cursor to pointer */
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  .Investor_formSection__LK6pJ span {
+    font-style: italic;
+    font-weight: 400;
+  }
+  /* Footer */
+.Investor_footer__1uJuR {
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.Investor_footer1__mHaHx img {
+    width: 130px;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.Investor_footer1__mHaHx h5,
+.Investor_footer1__mHaHx p {
+    font: var(--reg-16);
+}
+
+.Investor_footer1__mHaHx p {
+    color: var(--neu-grey);
+    width: 60%;
+}
+
+.Investor_subscribe__ADApl {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: 4em;
+}
+
+.Investor_subscribe__ADApl input {
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    padding-left: 1em;
+}
+
+.Investor_subscribe__ADApl button {
+    border-radius: 50px;
+    width: 130px;
+    background-color: var(--white);
+    border: 0;
+} 
+
+.Investor_footerList___sAWz {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Investor_footerList___sAWz p {
+    font: var(--reg-16);
+}
+
+.Investor_footerList___sAWz h5 {
+    font: var(--bold-16);
+    margin: 0;
+}
+
+.Investor_listItem__iAepY {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.Investor_list__FfhzC {
+    padding: 0;
+}
+
+.Investor_col__wBmjJ {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.Investor_footer2__yCrIA p {
+    margin-bottom: 2em;
+}
