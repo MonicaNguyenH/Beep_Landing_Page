@@ -1,3 +1,4 @@
 {
+  "/investor/page": "app/investor/page.js",
   "/page": "app/page.js"
 }

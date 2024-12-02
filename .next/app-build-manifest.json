@@ -11,6 +11,12 @@
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
+    ],
+    "/investor/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/investor/page.css",
+      "static/chunks/app/investor/page.js"
     ]
   }
 }

@@ -2,6 +2,7 @@
 
 import styles from "./NavBar.module.css";
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,7 +54,7 @@ export default function NavBar() {
             </a>
           </li>
           <li>
-            <a href="/" className={styles.link}>
+            <a href="/investor" className={styles.link}>
               Contacts
             </a>
           </li>
