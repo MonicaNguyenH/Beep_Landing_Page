@@ -2,6 +2,7 @@ import styles from "./styles/index.css";
 import NavBar from "../../components/NavBar";
 import ImgBtn from "../../components/ImgBtn";
 import OurTeam from "../../components/OurTeam";
+import ImgBtnMobile from "../../components/ImgBtnMobile";
 
 export default function Home() {
   return (
@@ -33,8 +34,11 @@ export default function Home() {
             <img src="/WhatWeOffer/TrustandTransparency.png" alt="Trust and Transparency" />
           </div>
 
-          <div>
+          <div className="imgBtn">
             <ImgBtn />
+          </div>
+          <div className="imgBtnMobile">
+            <ImgBtnMobile/>
           </div>
 
           <div className="download-container">
@@ -92,6 +96,17 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
+            </div>
+            <div className="footer-mobile">
+              <div className="form-mobile">
+                <input input type="email" placeholder="Email" required />
+                <button>Subscribe</button>
+              </div>
+              <p>Copyrights ® 2024 Beep</p>
+              <a href="https://www.instagram.com/beep.safety/" className="instagram" target="_blank" rel="noopener noreferrer">
+                <img src="/instagram.svg" alt="Instagram icon" width="20" height="20" />
+                <p>Instagram</p>
+              </a>
             </div>
           </footer>
         </main>

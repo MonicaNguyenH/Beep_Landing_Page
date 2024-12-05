@@ -62,22 +62,21 @@
 /* Adjust parent form container */
 .formSection {
     max-width: 600px;
-    margin: 0 auto; /* Centers the form horizontally */
+    margin: 0 auto;
     padding: 30px 20px;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #eaeaea;
     display: flex;
-    flex-direction: column;
-    gap: 1.5em; /* Add consistent spacing between elements */
+    flex-direction: column
   }
   
   /* Inputs and textarea */
   .formSection input,
   .formSection textarea {
-    width: 100%; /* Ensure all inputs take full width */
-    height: 50px; /* Consistent height */
+    width: 100%; 
+    height: 50px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -86,7 +85,7 @@
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s ease;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box; 
   }
   
   /* Name fields as a row */
@@ -110,7 +109,7 @@
   .formSection button {
     width: 200px; /* Adjust button width */
     height: 50px;
-    margin: 0 auto; /* Centers the button horizontally */
+    margin: 0 auto; 
     padding: 12px;
     background-color: #6200ea;
     color: #ffffff;
@@ -150,25 +149,25 @@
   }
   
   .buttonContainer {
-    display: flex; /* Flexbox for alignment */
-    justify-content: center; /* Horizontally center the button */
+    display: flex; 
+    justify-content: center; 
   }
   
   .formSection select {
-    width: 100%; /* Full width of the parent container */
-    height: 50px; /* Consistent height with other inputs */
+    width: 100%; 
+    height: 50px;
     padding: 10px;
-    padding-right: 40px; /* Adds space on the right for the icon */
-    padding-left: 20px; /* Adds space on the left */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 25px; /* Rounded corners */
-    font-size: 1rem; /* Font size for text */
+    padding-right: 40px; 
+    padding-left: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    font-size: 1rem; 
     outline: none;
     background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>')
-        no-repeat right 20px center; /* Positions the icon */
-    background-size: 15px; /* Adjust the size of the icon */
-    appearance: none; /* Removes default dropdown arrow */
-    cursor: pointer; /* Changes cursor to pointer */
+        no-repeat right 20px center; 
+    background-size: 15px;
+    appearance: none; 
+    cursor: pointer; 
     margin-bottom: 30px;
     margin-top: 10px;
   }
