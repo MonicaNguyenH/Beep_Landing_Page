@@ -260,3 +260,23 @@
 .footer2 p {
     margin-bottom: 2em;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-1,
+  .footer-2 {
+      display: none;
+  }
+
+  .footer {
+      width: 100%;
+      display: block;
+  }
+
+  .footer-mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+  }
+}
