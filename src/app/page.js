@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <>
       <div className="BG">
-        <div className="navbar">
-          <NavBar />
-        </div>
+        <NavBar />
         <main className="main">
           <header>
             <div className="header-container">
@@ -48,7 +46,7 @@ export default function Home() {
               <button className="get-started-btn">Get Started →</button>
             </div>
             <div className="download-img">
-              <img src="/Download/phone-mockup.png" alt="Phone mockup map screen" />
+              <img className="download-image" src="/Download/phone-mockup.png" alt="Phone mockup map screen" />
             </div>
           </div>
 
@@ -60,12 +58,12 @@ export default function Home() {
             <div className="footer-1">
               <img src="/Beep-logo.svg" alt="Beep logo" />
               <h5>Copyrights ® 2024 Beep</h5>
-              <p>We’re based in Vancouver, Canada where our journey to enhance safety first began. As part of a passionate and innovative community , we’re committed to creating tools that empower and protect every step of the way. </p>
+              <p>We’re based in Vancouver, Canada where our journey to enhance safety first began. As part of a passionate and innovative community, we’re committed to creating tools that empower and protect every step of the way. </p>
             </div>
             <div className="footer-2">
               <p>Stay connected with Beep and get the latest updates on safety features, new tools, and exclusive insights. Enter your email to join our community and stay informed!</p>
               <div className="subscribe">
-                <input input type="email" placeholder="Email" required />
+                <input type="email" placeholder="Email" required />
                 <button>Subscribe</button>
               </div>
               <div className="footer-list ">
@@ -99,7 +97,7 @@ export default function Home() {
             </div>
             <div className="footer-mobile">
               <div className="form-mobile">
-                <input input type="email" placeholder="Email" required />
+                <input type="email" placeholder="Email" required />
                 <button>Subscribe</button>
               </div>
               <p>Copyrights ® 2024 Beep</p>

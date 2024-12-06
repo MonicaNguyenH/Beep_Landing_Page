@@ -3,6 +3,11 @@
     text-align: center;
     padding: 2rem;
   }
+
+  .swiper {
+    transition: none;
+    transform: none;
+  }
   
   .title {
     font-size: 2.5rem;

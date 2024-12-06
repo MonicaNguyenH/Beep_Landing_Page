@@ -1,4 +1,4 @@
-// File: /Users/jumipham/Desktop/Beep_Landing_Page/src/app/layout.js
+// File: C:\Users\Shirin\Desktop\Beep_Landing_Page\src\app\layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

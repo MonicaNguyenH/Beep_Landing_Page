@@ -26,50 +26,6 @@ html, body {
     background-image: url('/BG/lines.svg');
 }
 
-/* Nav Bar */
-.navbar {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-container {
-    width: 85vw;
-    height: 50px;
-    flex-shrink: 1;
-
-    border-radius: 50pt;
-    background: var(--nav-black);
-    color: var(--white);
-    backdrop-filter: blur(4px);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 50px;
-    margin: 20px auto;
-
-    position: fixed;
-    z-index: 100;
-}
-
-.navLinks {
-    color: var(--white);
-    list-style: none;
-    display: flex;
-    gap: 5em; /* Spacing between links */
-}
-
-.navLinks a {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: bold;
-    transition: color 0.3s;
-    font: var(--reg-16);
-    cursor: pointer;
-}
-
 /* Header */
 header {
     background: url('/BG/img-bg-1.png') no-repeat;
@@ -306,12 +262,14 @@ header {
 .download-img img {
     width: 95%;
     height: auto;
+    max-height: 2800px;
 }
 
 /* Our Team */
 .teamSection {
     text-align: center;
     margin: 150px auto;
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,6 +297,11 @@ header {
     width: 90%;
 }
 
+/* .slide {
+    flex-grow: 1 !important;
+    width: fit-content !important;
+} */
+  
 .trackWrapper {
     overflow: hidden;
     width: 90%;
@@ -347,7 +310,7 @@ header {
 .track {
     display: flex;
     gap: 1.5rem;
-    transition: transform 0.5s ease-in-out;
+    /* transition: transform 0.5s ease-in-out; */
 }
 
 .card {
@@ -358,6 +321,35 @@ header {
     height: 18em;
     text-align: center;
     flex-shrink: 0;
+}
+
+.swiper {
+    height: auto; 
+    width: 84%;
+}
+
+.swiper_card {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    width: 90px;
+    height: 90px;
+    font: var(--reg-30);
+    background-color: rgba(173, 173, 173, 0.20);    ;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(5px); /* Safari support */
 }
 
 .image {
@@ -641,7 +633,35 @@ header {
         cursor: pointer;
     }
 
+    .swiper-button-prev, .swiper-button-next {
+        width: 30px;
+        height: 30px;
+        margin-top: -12px !important;
+    }
 
-    
+    .swiper-button-prev:after, .swiper-button-next:after {
+        scale: .5 !important;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper_card:first-child {
+        margin-left: 20px;
+    }
+
+    .swiper_card:last-child
+    {
+        margin-right: 20px;
+    }
+
+    .description {
+        width: 70% !important;
+    }
+
+    .teamSection {
+        margin-top: 4rem;
+    }
 
 }

@@ -12,7 +12,7 @@ export default function NavBar() {
   };
 
   return (
-    <>
+    <div className={styles.navbar}>
       <div className={styles.navContainer}>
         {/* Logo */}
         <div className={styles.logoImg}>
@@ -55,11 +55,11 @@ export default function NavBar() {
           </li>
           <li>
             <a href="/investor" className={styles.link}>
-              Contacts
+              Contact
             </a>
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }

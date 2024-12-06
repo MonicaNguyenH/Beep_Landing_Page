@@ -6,34 +6,36 @@ export default function Investor() {
   return (
     <>
       <div className={styles.page} >
-        <header className={styles.navContainer}>
-          <NavBar />
-        </header>
+        <div className={styles.parentNav}>
+        <NavBar />
+        </div>
+      
         <main>
+          
         <div className={styles.mainContent}>
             <div className={styles.textContent}>
                 <h1>Drive Impact, Profit, and Change with Beep</h1>
                 <p>
                     Beep combines smart technology and real-time data to help you
-                    navigate your world with confidence
+                    navigate your world with confidence.
                 </p>
                 <button className={styles.getStartedBtn}>Get Started →</button>
             </div>
             <div className={styles.formSection}>
                 <div>
-                <h2>Ready to Make an Impact?</h2>
-                <p>Fill Out the Form Below</p>
+                <h2>Ready to make an impact?</h2>
+                <p>Fill out the form below.</p>
                 </div>
                 <form>
                     {/* Name Fields */}
                     <div className={styles.nameInput}>
                         <div>
                         <label>First Name</label>
-                        <input classNem={styles.firstName} type="text" placeholder="First Name" required />
+                        <input className={styles.firstName} type="text" placeholder="First Name" required />
                         </div>
                         <div>
                         <label>Last Name</label>
-                        <input classNem={styles.firstName} type="text" placeholder="Last Name" required />
+                        <input className={styles.firstName} type="text" placeholder="Last Name" required />
                         </div>
                     </div>
 
@@ -52,9 +54,9 @@ export default function Investor() {
                     {/* Investing Level */}
                     <div>
                     <label htmlFor="investingLevel">Investing Level <span>(optional)</span></label>
-                    <select id="investingLevel" className={styles.dropdown}>
-                        <option value="" disabled selected>
-                        Select an amount
+                    <select id="investingLevel" className={styles.dropdown} defaultValue="">
+                        <option value="" disabled>
+                            Select an amount
                         </option>
                         <option value="500">$500</option>
                         <option value="1000">$1,000</option>
@@ -86,7 +88,7 @@ export default function Investor() {
                 <div className={styles.footer2}>
                 <p>Stay connected with Beep and get the latest updates on safety features, new tools, and exclusive insights. Enter your email to join our community and stay informed!</p>
                 <div className={styles.subscribe}>
-                    <input input type="email" placeholder="Email" required />
+                    <input type="email" placeholder="Email" required />
                     <button>Subscribe</button>
                 </div>
                 <div className={styles.footerList}>

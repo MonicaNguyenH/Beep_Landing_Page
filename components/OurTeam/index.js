@@ -1,14 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
+import TeamCarousel from "./Carousel";
 
 const OurTeam = () => {
+
   const teamMembers = [
     { name: "Monica Nguyen", role: "Project Manager", image: "/OurTeam/Mon/mon.png" },
     { name: "Jumi Pham", role: "UX/UI Designer", image: "/OurTeam/Jumi/jumi.png" },
-    { name: "Shirin Forouzan", role: "Frontend Developer", image: "/OurTeam/Shirin/shirin.png" },
-    { name: "Callista Chan", role: "Frontend Developer", image: "/OurTeam/Cally/callista.png" },
-    { name: "Dennis Liu", role: "Full Stack Web Developer", image: "/OurTeam/Dennis/denis.png" },
+    { name: "Shirin Forouzan", role: "Frontend Designer", image: "/OurTeam/Shirin/shirin.png" },
+    { name: "Callista Chan", role: "Frontend Designer", image: "/OurTeam/Cally/callista.png" },
+    { name: "Denis Liu", role: "Full Stack Web Developer", image: "/OurTeam/Dennis/denis.png" },
     { name: "Sol Kim", role: "Full Stack Web Developer", image: "/OurTeam/Sol/sol.png" },
     { name: "Christy Wan", role: "Full Stack Web Developer", image: "/OurTeam/Christy/christy.png" },
     { name: "Aless Wei", role: "Full Stack Web Developer", image: "/OurTeam/Aless/aless.png" },
@@ -16,32 +18,37 @@ const OurTeam = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleArrowClick = (direction) => {
+  console.log('teammember length', teamMembers.length)
+  console.log('current index', currentIndex)
+
+  const handleArrowClickDesktop = (direction) => {
     if (direction === "left" && currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
     } else if (direction === "right" && currentIndex < teamMembers.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+      setCurrentIndex(1);
     }
   };
 
   return (
     <section className="teamSection">
+      
       <h2 className="title">Meet our team</h2>
       <p className="description">
         Meet the innovative BCIT's full-stack developers and digital designers
         who make up Beep's dedicated crew.
       </p>
-      <div className="carousel">
-        {/* Left Arrow */}
+      <TeamCarousel />
+      {/* <div className="carousel">
+     
         <button
           className="arrow leftArrow"
-          onClick={() => handleArrowClick("left")}
+          onClick={() => handleArrowClickDesktop("left")}
           disabled={currentIndex === 0}
         >
           ←
         </button>
 
-        {/* Cards */}
+        
         <div className="trackWrapper">
           <div
             className="track"
@@ -49,7 +56,8 @@ const OurTeam = () => {
               transform: `translateX(-${currentIndex * 100}%)`,
             }}
           >
-            {teamMembers.map((member, index) => (
+
+            {teamMembers.slice(0,4).map((member, index) => (
               <div className="card" key={index}>
                 <img
                   src={member.image}
@@ -62,18 +70,19 @@ const OurTeam = () => {
                 </div>
               </div>
             ))}
+
           </div>
         </div>
 
-        {/* Right Arrow */}
+ 
         <button
           className="arrow rightArrow"
-          onClick={() => handleArrowClick("right")}
+          onClick={() => handleArrowClickDesktop("right")}
           disabled={currentIndex === teamMembers.length - 1}
         >
           →
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -1,7 +1,6 @@
 .page {
     margin: 0;
     padding: 0;
-    max-height: 100vh;
     max-width: 100vw;
     overflow-x: hidden;
     display: flex;
@@ -12,11 +11,10 @@
     background-image: url('/BG/lines.svg')
 }
 
-.navContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+.parentNav {
+  position: fixed !important;
+  width: 100%;
+}
 
 .mainContent {
     display:flex;
@@ -62,7 +60,6 @@
 /* Adjust parent form container */
 .formSection {
     max-width: 600px;
-    margin: 0 auto;
     padding: 30px 20px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -259,4 +256,31 @@
 
 .footer2 p {
     margin-bottom: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textContent,
+  .formSection {
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .formSection {
+    margin-top: 20px; 
+  }
+
+  .textContent h1 {
+    font-size: 1.9rem; 
+    line-height: 1.3; 
+  }
+
+  .nameInput {
+    flex-direction: column;
+    gap: 0;
+  }
 }
