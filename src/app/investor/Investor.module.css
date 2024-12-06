@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Switzer';
+  src: url('../fonts/Switzer-Variable.ttf') format('ttf'),
+       url('../fonts/Switzer-VariableItalic.ttf') format('ttf');
+}
+
 .page {
     margin: 0;
     padding: 0;
@@ -8,7 +14,8 @@
     align-items: center;
     background-color: var(--black);
     background-repeat: no-repeat;
-    background-image: url('/BG/lines.svg')
+    background-image: url('/BG/lines.svg');
+    font-family: 'Switzer';
 }
 
 .parentNav {
