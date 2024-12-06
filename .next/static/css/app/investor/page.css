@@ -362,3 +362,23 @@
 .Investor_footer2__yCrIA p {
     margin-bottom: 2em;
 }
+
+@media screen and (max-width: 768px) {
+  .Investor_footer-1__7TpqB,
+  .Investor_footer-2__NU1NS {
+      display: none;
+  }
+
+  .Investor_footer__1uJuR {
+      width: 100%;
+      display: block;
+  }
+
+  .Investor_footer-mobile__qJIk3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+  }
+}
