@@ -3,6 +3,7 @@
   \*******************************************************************************************************************************************************************************************************************************************************************************/
 
 /* NavBar Container */
+
 .NavBar_navContainer__7p04n {
     display: flex;
     align-items: center;
@@ -15,6 +16,54 @@
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  /* Nav Bar */
+.NavBar_navbar__ObX6k {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.NavBar_nav-container__2FImP {
+  width: 85vw;
+  height: 50px;
+  flex-shrink: 1;
+
+  border-radius: 50pt;
+  background: var(--nav-black);
+  color: var(--white);
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px;
+  margin: 20px auto;
+
+  position: fixed;
+  z-index: 100;
+}
+
+.NavBar_navLinks__o9WWJ {
+  color: var(--white);
+  list-style: none;
+  display: flex;
+  gap: 5em; /* Spacing between links */
+}
+
+.NavBar_navLinks__o9WWJ a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  transition: color 0.3s;
+  font: var(--reg-16);
+  cursor: pointer;
+}
   
   /* Logo */
   .NavBar_logoImg__RuBmp img {
@@ -80,7 +129,7 @@
         align-items: center;
         gap: 35px;
         position: absolute;
-        top: 100px;
+        top: 50px;
         right: 0;
         background: var(--black);
         width: 100%;
@@ -103,7 +152,6 @@
 .Investor_page__W8SiG {
     margin: 0;
     padding: 0;
-    max-height: 100vh;
     max-width: 100vw;
     overflow-x: hidden;
     display: flex;
@@ -114,11 +162,10 @@
     background-image: url('/BG/lines.svg')
 }
 
-.Investor_navContainer__863Op {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+.Investor_parentNav__s8nGe {
+  position: fixed !important;
+  width: 100%;
+}
 
 .Investor_mainContent__onX9U {
     display:flex;
@@ -164,7 +211,6 @@
 /* Adjust parent form container */
 .Investor_formSection__LK6pJ {
     max-width: 600px;
-    margin: 0 auto;
     padding: 30px 20px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -364,21 +410,45 @@
 }
 
 @media screen and (max-width: 768px) {
-  .Investor_footer-1__7TpqB,
-  .Investor_footer-2__NU1NS {
-      display: none;
-  }
-
-  .Investor_footer__1uJuR {
-      width: 100%;
-      display: block;
-  }
-
-  .Investor_footer-mobile__qJIk3 {
-      display: flex;
+    .Investor_mainContent__onX9U {
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      gap: 30px;
+    }
+
+    .Investor_textContent__LvpG_,
+    .Investor_formSection__LK6pJ {
+      width: 100%; 
+      text-align: center; 
+    }
+
+    .Investor_formSection__LK6pJ {
+      margin-top: 20px; 
+    }
+
+    .Investor_textContent__LvpG_ h1 {
+      font-size: 1.9rem; 
+      line-height: 1.3; 
+    }
+
+    .Investor_nameInput__xEfmg {
+      flex-direction: column;
+      gap: 0;
+    .Investor_footer-1__7TpqB,
+    .Investor_footer-2__NU1NS {
+        display: none;
+    }
+
+    .Investor_footer__1uJuR {
+        width: 100%;
+        display: block;
+    }
+
+    .Investor_footer-mobile__qJIk3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
   }
 }

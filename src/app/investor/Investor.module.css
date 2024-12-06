@@ -259,47 +259,45 @@
 }
 
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-  .mainContent {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .textContent,
-  .formSection {
-    width: 100%; 
-    text-align: center; 
-  }
-
-  .formSection {
-    margin-top: 20px; 
-  }
-
-  .textContent h1 {
-    font-size: 1.9rem; 
-    line-height: 1.3; 
-  }
-
-  .nameInput {
-    flex-direction: column;
-    gap: 0;
-=======
-  .footer-1,
-  .footer-2 {
-      display: none;
-  }
-
-  .footer {
-      width: 100%;
-      display: block;
-  }
-
-  .footer-mobile {
-      display: flex;
+    .mainContent {
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      gap: 30px;
->>>>>>> 49b6b26313eab9bf8713b3309c08ee36032ba9c2
+    }
+
+    .textContent,
+    .formSection {
+      width: 100%; 
+      text-align: center; 
+    }
+
+    .formSection {
+      margin-top: 20px; 
+    }
+
+    .textContent h1 {
+      font-size: 1.9rem; 
+      line-height: 1.3; 
+    }
+
+    .nameInput {
+      flex-direction: column;
+      gap: 0;
+    .footer-1,
+    .footer-2 {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+        display: block;
+    }
+
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
   }
 }
