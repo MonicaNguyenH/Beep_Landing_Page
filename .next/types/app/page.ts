@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\Users\Shirin\Desktop\Beep_Landing_Page\src\app\page.js
+=======
+// File: C:\Users\test\Desktop\Beep_Landing_Page\src\app\page.js
+>>>>>>> 49b6b26313eab9bf8713b3309c08ee36032ba9c2
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
