@@ -405,14 +405,103 @@
     gap: 1em;
 }
 
+/* Footer */
+.Investor_footer__1uJuR {
+  width: 84%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 150px;
+}
+
+.Investor_footer1__mHaHx img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.Investor_footer1__mHaHx p {
+  color: var(--neu-grey);
+  width: 60%;
+  font: var(--reg-16);
+}
+
+.Investor_footer1__mHaHx h5 {
+  font: var(--reg-16);
+}
+
+.Investor_footer1__mHaHx p {
+  color: var(--neu-grey);
+  width: 60%;
+}
+
+.Investor_subscribe__ADApl {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-bottom: 4em;
+}
+
+.Investor_subscribe__ADApl input {
+  width: 80%;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  padding-left: 1em;
+}
+
+.Investor_subscribe__ADApl button {
+  border-radius: 50px;
+  width: 130px;
+  background-color: var(--white);
+  border: 0;
+} 
+
+.Investor_footerList___sAWz {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Investor_footerList___sAWz p {
+  font: var(--reg-16);
+}
+
+.Investor_footerList___sAWz h5 {
+  font: var(--bold-16);
+  margin: 0;
+}
+
+.Investor_listItem__iAepY {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.Investor_list__FfhzC {
+  padding: 0;
+}
+
+.Investor_col__wBmjJ {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .Investor_footer2__yCrIA p {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.Investor_footerMobile__q5sTF {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
     .Investor_mainContent__onX9U {
       flex-direction: column;
       align-items: center;
+      gap: 2em;
     }
 
     .Investor_textContent__LvpG_,
@@ -433,8 +522,10 @@
     .Investor_nameInput__xEfmg {
       flex-direction: column;
       gap: 0;
-    .Investor_footer-1__7TpqB,
-    .Investor_footer-2__NU1NS {
+    }
+
+    .Investor_footer1__mHaHx,
+    .Investor_footer2__yCrIA {
         display: none;
     }
 
@@ -443,12 +534,42 @@
         display: block;
     }
 
-    .Investor_footer-mobile__qJIk3 {
+    .Investor_footerMobile__q5sTF {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
     }
+    .Investor_formMobile__EchkK {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 85%;
+    }
+    .Investor_formMobile__EchkK input {
+        width: 260px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid var(--white);
+        background-color: transparent;
+        padding: 0 20px;
+    }
+    .Investor_formMobile__EchkK button {
+        width: 120px;
+        height: 50px;
+        border-radius: 25px;
+        background: var(--white);
+        border: none;
+    }
+    .Investor_instagram__7rbnR  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--white);
+        cursor: pointer;
+    }
   }
-}
+

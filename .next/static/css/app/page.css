@@ -806,6 +806,7 @@ header {
 .download-text h1 {
     font: var(--reg-50);
     margin: 0;
+    line-height: 90%;
 }
 
 .download-text p {
@@ -1123,8 +1124,7 @@ header {
     .download-container {
         position: relative;
         width: 390px;
-        height: 600px;
-
+        height: 560px;
     }
 
     .download-text {
@@ -1134,6 +1134,10 @@ header {
         justify-content: center;
         text-align: center;
         padding-left: 20px;
+    }
+
+    .download-text h1 {
+        margin-bottom: 1rem;
     }
 
     .footer-1,

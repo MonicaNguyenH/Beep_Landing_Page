@@ -44,7 +44,7 @@ export default function ImgBtnMobile() {
 
   return (
     <section className={styles.imgBtnContainer}>
-      <h1 className={styles.heading}>How does Beep work</h1>
+      <h1 className={styles.heading}>How Beep works</h1>
       <p className={styles.description}>
         Explore how Beep’s powerful tools keep you safe, informed, and connected at all times.
       </p>

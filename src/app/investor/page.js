@@ -81,46 +81,57 @@ export default function Investor() {
         </main>
         <footer className={styles.footer}>
             <div className={styles.footer1}>
-                <img src="/Beep-logo.svg" alt="Beep logo"/>
-                <h5>Copyrights ® 2024 Beep</h5>
-                <p>We’re based in Vancouver, Canada where our journey to enhance safety first began. As part of a passionate and innovative community , we’re committed to creating tools that empower and protect every step of the way. </p>
-                </div>
-                <div className={styles.footer2}>
-                <p>Stay connected with Beep and get the latest updates on safety features, new tools, and exclusive insights. Enter your email to join our community and stay informed!</p>
-                <div className={styles.subscribe}>
-                    <input type="email" placeholder="Email" required />
-                    <button>Subscribe</button>
-                </div>
-                <div className={styles.footerList}>
-                    <div className={styles.col}>
-                    <h5>Products</h5>
-                    <ul className={styles.list}>
-                        <li className={styles.listItem}>Our Values</li>
-                        <li className={styles.listItem}>Features</li>
-                        <li className={styles.listItem}>Download Beep</li>
-                    </ul>
-                    </div>
-
-                    <div className={styles.col}>
-                    <h5>About</h5>
-                    <ul className={styles.list}>
-                        <li className={styles.listItem}>Our Team</li>
-                        <li className={styles.listItem}>Blog</li>
-                        <li className={styles.listItem}>Contacts</li>
-                    </ul>
-                    </div>
-
-                    <div className={styles.col}>
-                    <h5>Social Media</h5>
-                    <ul className={styles.list}>
-                        <li className={styles.listItem}>Instagram</li>
-
-                        <li className={styles.listItem}>LinkedIn</li>
-                    </ul>
-                    </div>
-                </div>
+              <img src="/Beep-logo.svg" alt="Beep logo" />
+              <h5>Copyrights ® 2024 Beep</h5>
+              <p>We’re based in Vancouver, Canada where our journey to enhance safety first began. As part of a passionate and innovative community, we’re committed to creating tools that empower and protect every step of the way. </p>
             </div>
-        </footer>
+            <div className={styles.footer2}>
+              <p>Stay connected with Beep and get the latest updates on safety features, new tools, and exclusive insights. Enter your email to join our community and stay informed!</p>
+              <div className={styles.subscribe}>
+                <input type="email" placeholder="Email" required />
+                <button>Subscribe</button>
+              </div>
+              <div className={styles.footerList}>
+                <div className={styles.col}>
+                  <h5>Products</h5>
+                  <ul className={styles.list}>
+                    <li className={styles.listItem}>Our Values</li>
+                    <li className={styles.listItem}>Features</li>
+                    <li className={styles.listItem}>Download Beep</li>
+                  </ul>
+                </div>
+
+                <div className={styles.col}>
+                  <h5>About</h5>
+                  <ul className={styles.list}>
+                    <li className={styles.listItem}>Our Team</li>
+                    <li className={styles.listItem}>Blog</li>
+                    <li className={styles.listItem}>Contacts</li>
+                  </ul>
+                </div>
+
+                <div className={styles.col}>
+                  <h5>Social Media</h5>
+                  <ul className={styles.list}>
+                    <li className={styles.listItem}>Instagram</li>
+
+                    <li className={styles.listItem}>LinkedIn</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className={styles.footerMobile}>
+              <div className={styles.formMobile}>
+                <input type="email" placeholder="Email" required />
+                <button>Subscribe</button>
+              </div>
+              <p>Copyrights ® 2024 Beep</p>
+              <a href="https://www.instagram.com/beep.safety/" className={styles.instagram} target="_blank" rel="noopener noreferrer">
+                <img src="/instagram.svg" alt="Instagram icon" width="20" height="20" />
+                <p>Instagram</p>
+              </a>
+            </div>
+          </footer>
       </div>
     </>
   );

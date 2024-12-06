@@ -254,14 +254,103 @@
     gap: 1em;
 }
 
+/* Footer */
+.footer {
+  width: 84%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 150px;
+}
+
+.footer1 img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.footer1 p {
+  color: var(--neu-grey);
+  width: 60%;
+  font: var(--reg-16);
+}
+
+.footer1 h5 {
+  font: var(--reg-16);
+}
+
+.footer1 p {
+  color: var(--neu-grey);
+  width: 60%;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-bottom: 4em;
+}
+
+.subscribe input {
+  width: 80%;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  padding-left: 1em;
+}
+
+.subscribe button {
+  border-radius: 50px;
+  width: 130px;
+  background-color: var(--white);
+  border: 0;
+} 
+
+.footerList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerList p {
+  font: var(--reg-16);
+}
+
+.footerList h5 {
+  font: var(--bold-16);
+  margin: 0;
+}
+
+.listItem {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.list {
+  padding: 0;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .footer2 p {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.footerMobile {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
     .mainContent {
       flex-direction: column;
       align-items: center;
+      gap: 2em;
     }
 
     .textContent,
@@ -282,8 +371,10 @@
     .nameInput {
       flex-direction: column;
       gap: 0;
-    .footer-1,
-    .footer-2 {
+    }
+
+    .footer1,
+    .footer2 {
         display: none;
     }
 
@@ -292,12 +383,41 @@
         display: block;
     }
 
-    .footer-mobile {
+    .footerMobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
     }
+    .formMobile {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 85%;
+    }
+    .formMobile input {
+        width: 260px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid var(--white);
+        background-color: transparent;
+        padding: 0 20px;
+    }
+    .formMobile button {
+        width: 120px;
+        height: 50px;
+        border-radius: 25px;
+        background: var(--white);
+        border: none;
+    }
+    .instagram  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--white);
+        cursor: pointer;
+    }
   }
-}
