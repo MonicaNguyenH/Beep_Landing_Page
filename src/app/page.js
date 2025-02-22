@@ -15,7 +15,9 @@ export default function Home() {
             <div className="header-container">
               <h1>Our Safety, Empowered: Real-Time Crime Maps & Emergency Tools</h1>
               <p>Beep combines smart technology and real-time data to help you navigate your world with confidence</p>
-              <button className="get-started-btn">Get Started →</button>
+              <Link href="https://www.youtube.com/shorts/GoaUL_IReU8" passHref>
+                <button className="get-started-btn">Get Started →</button>
+              </Link>
             </div>
           </header>
 
