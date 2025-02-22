@@ -3,6 +3,7 @@ import NavBar from "../../components/NavBar";
 import ImgBtn from "../../components/ImgBtn";
 import OurTeam from "../../components/OurTeam";
 import ImgBtnMobile from "../../components/ImgBtnMobile";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -43,7 +44,9 @@ export default function Home() {
             <div className="download-text">
               <h1>Download Beep</h1>
               <p>Beep is a cutting-edge safety app designed to provide real-time insights and tools to keep you secure. Perfect for anyone prioritizing personal safety, Beep combines AI-powered navigation with intuitive features to help you stay aware and protected. Whether it's navigating safely at night, responding swiftly to emergencies, or finding secure nearby locations, Beep is your ultimate companion for peace of mind.</p>
-              <button className="get-started-btn">Get Started →</button>
+              <Link href="https://www.youtube.com/shorts/GoaUL_IReU8" passHref>
+                <button className="get-started-btn">Get Started →</button>
+              </Link>
             </div>
             <div className="download-img">
               <img className="download-image" src="/Download/phone-mockup.png" alt="Phone mockup map screen" />
